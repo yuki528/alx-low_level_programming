@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Writes 00 - 99
+ * main - Writes 001 - 999
+ * @void: Empty parameter list for main.
  *
  * Description: Writes all unique combinations
- * of 2 numbers
+ * of 3 numbers
  *
  * Return: 0 for success
 */
