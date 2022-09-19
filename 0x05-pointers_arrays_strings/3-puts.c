@@ -8,16 +8,16 @@
 
 void _puts(char *str)
 {
-	char mystr[] = "kafuku";
-	int size = 0;
-	while(size >= 0)
+	int count = 0;
+
+	while (count >= 0)
 	{
-	if(str[size] == '\0')
-	{
-		puts('\n');
-		break;
-	}
-	puts(mystr[size]);
-		size++;
+		if (str[count] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		_putchar(str[count]);
+		count++;
 	}
 }
