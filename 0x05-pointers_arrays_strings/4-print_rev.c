@@ -5,21 +5,18 @@
  * @s: input string.
  * Return: no return.
  */
-
 void print_rev(char *s)
 {
 	int size = 0;
-	while(size >= 0)
+
+	while (size >= 0)
 	{
-		if(s[size]== '\0')
-		{
+		if (s[size] == '\0')
 			break;
-		}
 		size++;
 	}
-	for(size--; size >=0; size--)
-	{
-		_putchar(s[count]);
+
+	for (size--; size >= 0; size--)
+		_putchar(s[size]);
 	_putchar('\n');
-	}
 }

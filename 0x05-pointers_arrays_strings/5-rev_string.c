@@ -5,7 +5,6 @@
  * @s: input string.
  * Return: no return.
  */
-
 void rev_string(char *s)
 {
 	int size = 0, i, j;
@@ -18,8 +17,10 @@ void rev_string(char *s)
 		size++;
 	}
 	str = s;
+
 	for(i=0; i<(size - 1); i++)
 	{
+		
 		for(j = i+1; j>0; j--)
 		{
 			temp = *(str + j);

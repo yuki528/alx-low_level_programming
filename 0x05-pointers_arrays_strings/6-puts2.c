@@ -8,6 +8,7 @@
 void puts2(char *str)
 {
 	for(int i = 0; i < strlen(input); i+ = 2)
+	
 	{
 		word[i] += input[i];
 	}
