@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * leet - Entry point
  * ONE if, TWO loops only...
@@ -11,7 +10,9 @@ char *leet(char *s)
 {
 	int i = 0;
 	int j = 0;
+
 	char *l = "aAeEoOlLtT";
+	
 	char *n = "4433001177";
 
 	while (*(s + i) != '\0')
@@ -22,7 +23,9 @@ char *leet(char *s)
 				*(s + i)  = *(n + j);
 			j++;
 		}
+
 		j = 0;
+		
 		i++;
 	}
 	return (s);
