@@ -5,6 +5,7 @@
  * @n: input
  * Return: Always 0 (Success)
  */
+
 char *leet(char *s)
 {
 	int i, j;
