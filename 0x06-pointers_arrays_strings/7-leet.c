@@ -5,28 +5,19 @@
  * @n: input
  * Return: Always 0 (Success)
  */
-
 char *leet(char *s)
 {
-	int i = 0;
-	int j = 0;
+	int i, j;
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	char *l = "aAeEoOlLtT";
-	
-	char *n = "4433001177";
-
-	while (*(s + i) != '\0')
+	for (i = 0; *(s + i); i++)
 	{
-		while (*(l + j) != '\0')
+		for (j = 0; j <= 9; j++)
 		{
-			if (*(s + i) == *(l + j))
-				*(s + i)  = *(n + j);
-			j++;
+			if (a[j] == *(s + i))
+				*(s + i) = b[j];
 		}
-
-		j = 0;
-		
-		i++;
 	}
 	return (s);
 }
