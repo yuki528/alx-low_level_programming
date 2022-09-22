@@ -5,21 +5,22 @@
  * @src: copy from
  * Return: two concat strings
  */
-
 char *_strcat(char *dest, char *src)
 {
-	int length, j;
+	int count = 0, count2 = 0;
 
-	while(dest[length] != '\0')
+	while (*(dest + count) != '\0')
 	{
-		++length;
+		count++;
 	}
 
-	for (j = 0; src[j] != '\0'; ++j, ++length) {
-		dest[length] = src[j];
+	while (count2 >= 0)
+	{
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\0')
+			break;
+		count++;
+		count2++;
 	}
-	dest[length] = '\0';
-
-	
-	return dest;
+	return (dest);
 }
