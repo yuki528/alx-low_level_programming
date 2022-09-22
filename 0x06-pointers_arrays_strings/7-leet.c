@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * leet - Entry point
- * ONE if, TWO loops only...
- * @n: input
- * Return: Always 0 (Success)
+ * leet - encodes a string into 1337
+ * @s: input string.
+ * Return: the pointer to dest.
  */
 
 char *leet(char *s)
