@@ -1,29 +1,27 @@
 #include "main.h"
 
 /**
- *function that copies string
+ * _strncpy - cpoies n bytes of src to the dest string
+ * @dest: string to copy to
+ * @src: string being copied
+ * @n: largest number of bytes to copy
  *
- *
- *@dest: string to be overwritten
- *
- * @n: number of values to copy
- *
- * works exactly like strncpy
- *
+ * Return: address of dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
-	for(i = 0; i <n && src[i] != '\0'; i++)
+	i = 0;
+	while (i < n && *(src + i))
 	{
-		dest[i] = src[i];
-	}
-
-	while (i < n)
-	{
-		dest[i] = '\0';
+		*(dest + i) = *(src + i);
 		i++;
 	}
-	return (dest)
+	while (i < n)
+	{
+		*(dest + i) = '\0';
+		i++;
+	}
+	return (dest);
 }
