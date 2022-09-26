@@ -1,5 +1,5 @@
 #include<stdlib.h>
-#include <main.h>
+#include "main.h"
 /**
  * function that locates a character in a string.
  *

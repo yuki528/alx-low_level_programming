@@ -4,6 +4,9 @@
  *
  *  Returns a pointer to dest
  *
+ *  @n: number of bytes to copy
+ *  @dest: destination of copy
+ *  @src: memory area to copy
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -14,5 +17,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		dest[i] = src[i];
 	}
+
 	return(dest);
 }
