@@ -1,5 +1,5 @@
-#define _MAIN_H_
-#define _MAIN_H_
+#define MAIN_H
+#define MAIN_H
 
 int _putchar(char);
 void _puts_recursion(char *s);
